@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Todo App</h1>
+  </header>
+  <main>
+    <section id="todo-stats">
+      <div class="todo-count-container" aria-label="Todo Statistics">
+          <p id="completed-count">0 completed</p>
+          <p>/</p>
+          <p id="todo-count">0 todo</p>
+      </div>
+      <button id="delete-all">Delete All</button>
+    </section>
+    <section>
+      <form id="todo-form">
+        <label for="todo-title">
+          Title:
+          <input id="todo-title" type="text" placeholder="Title" />
+        </label>
+        <label for="todo-detail">
+          Detail:
+          <textarea id="todo-detail" placeholder="Detail"></textarea>
+        </label>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+    <section>
+      <ul id="todo-list"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
